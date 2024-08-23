@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=devide-width, initial-scale=1.0" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        
+        <title>Đăng nhập</title>
+    </head>
+    <body>
+        <div 
+            style="height: 100vh"
+            class="container d-flex justify-content-center align-items-center"
+        >
+            <form style="width: 400px;">
+                <h3 class="text-center">Đăng nhập tài khoản</h3>
+                <!-- Email -->
+                <div class="mb-3">
+                    <label for="Email" class="form-label"
+                    >Email</label>
+                    <input 
+                       type="text" 
+                       class="form-control" 
+                       id="Email" 
+                       placeholder="Nhập email">
+                </div>
+                <!-- Mật khẩu -->
+                <div class="mb-3">
+                    <label for="password" class="form-label"
+                    >Mật khẩu</label>
+                    <input 
+                       type="text" 
+                       class="form-control" 
+                       id="password" 
+                       placeholder="Nhập mật khẩu">
+                </div>
+                <!--Nút đăng nhập-->
+                <div>
+                    <button 
+                    style="width: 100%" 
+                    class="btn btn-primary">Đăng nhập</button>
+                </div>
+                <p class="text-center mt-2">
+                    Bạn chưa có tài khoản? <a href="./register.html">Đăng ký</a>
+                </p>
+            </form>
+        </div>
+
+    </body>
+</html>

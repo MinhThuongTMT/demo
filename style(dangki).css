@@ -1,0 +1,117 @@
+/* Background toàn trang */
+body {
+    background-image: url('https://i.pinimg.com/564x/d8/c0/e3/d8c0e3bd6e480bbe224b94c55b85c333.jpg'); /* Thay đổi URL theo ảnh bạn chọn */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif; /* Chọn font chữ hiện đại và rõ ràng */
+    color: #333;
+}
+
+/* Hiệu ứng làm mờ và nổi bật cho form đăng ký */
+#formRegister {
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 15px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    padding: 25px; /*Giam chieu dai cua form*/
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    border: 2px solid #5cb85c; /* Thêm viền màu xanh lá cây để liên quan đến chủ đề y tế */
+}
+
+#formRegister:hover {
+    transform: scale(1.01);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* Tạo hiệu ứng mờ nền và highlight */
+.container {
+    backdrop-filter: blur(10px);
+    padding: 20px;
+}
+
+/* Tông màu và kiểu chữ chung cho trang web */
+h3 {
+    color: #0f0785; /* Màu xanh đậm, tạo cảm giác đáng tin cậy và chuyên nghiệp */
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-transform: uppercase; /* Chữ in hoa để tạo sự nổi bật */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng nhẹ cho chữ */
+}
+
+label {
+    color: #333;
+    font-weight: 500;
+}
+
+input, textarea, button {
+    border-radius: 10px;
+    border: 2px solid #5cb85c;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #aaa; /* Placeholder màu xám nhẹ */
+    font-style: italic;
+}
+
+/* Nhập lại mật khẩu */
+#rePassword {
+    margin-bottom: 20px; /* Điều chỉnh khoảng cách dưới của trường nhập lại mật khẩu */
+}
+
+
+/* Nút đăng ký */
+button {
+    background-color: #5cb85c;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #4cae4c;
+    transform: translateY(-3px); /* Nút sẽ nhấc lên khi hover */
+}
+
+/* Tạo hiệu ứng động khi vào trang */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#formRegister {
+    animation: fadeInUp 0.7s ease-in-out;
+}
+
+/* Tạo hiệu ứng động cho các thành phần input */
+input, textarea {
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus {
+    border-color: #1e8449;
+    box-shadow: 0 0 8px rgba(30, 132, 73, 0.6);
+}
+
+/* Link đăng nhập */
+a {
+    color: #1304e7;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #f80b0b;
+    text-decoration: underline;
+}
